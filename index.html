@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="html beginner"/>
+    <meta name="author" content="programmer"/>
+    <title>HTML Basic</title>
+
+     <!--HTML Emojis-->
+     <meta charset="UTF-8"/>
+</head>
+<body>
+
+    <!--Your Comment Here-->
+
+    <p>Paragrap</p>
+    <h1>heading 1</h1>
+    <h2>heading 2</h2>
+    <h3>heading 3</h3>
+    <h4>heading 4</h4>
+    <h5>heading 5</h5>
+    <h6>heading 6</h6>
+    
+    <br>  <!--Break element-->
+
+    <b> => bold</b> <br>
+    <strong> => important</strong> <br> 
+    <i> => italic</i> <br> 
+    <em> =>  emphasized</em> <br> 
+    <mark> => marked</mark> <br>  
+    <small> => smaller</small> <br> 
+    <mark> => marked</mark> <br> 
+    <del> => deleted</del> <br> 
+    <mark> => marked</mark> <br>  
+    <ins> => inserted</ins> <br> 
+    <sub> => subscript</sub> <br>  
+    <sup> => superscript</sup> <br> 
+
+
+    <!--Anchor Tag href="" same page they open-->
+    <a href="home.html">home</a>
+    <a href="about.html">about</a><br> 
+
+
+    <!--Target Tag another page-->
+    <a href="home.html" target="_blank">home</a><br> 
+    <a href="about.html" target="_self">about</a> <br>
+
+
+    <!--Image Element Attribute-->
+    <img src="" width="200" height="200" alt="error"><br> 
+
+    <!--Image Link with <a href=""> image </a>-->
+    <a href="home.html">
+         
+        <img src="" width="200" height="200" alt="error">
+
+        </a>
+
+        <!--File Paths-->
+        <!--"name.png" -> The File in the same folder-->
+        <!--"images/name.png" -> The File is in folder images in the current folder-->
+        <!--"../name.png" -> The File is in the folder one level up from the current folder.-->
+        <!--absolute Path -> The file's Path is fully specified. -->
+        
+        
+        <!--source element-->
+        <source src="" > <br>
+
+        <!--Audio Element-->
+        <audio controls>  <br>
+        <source src="music.mp3" type="audio/mp3">
+        <source src="music.ogg" type="audio/ogg">
+        Browser doesn't support the audio tag.
+        </audio>
+
+        <audio src="music.mp3" controls> <br>
+          Browser doesn't support the audio tag.
+        </audio>
+
+
+        <!--Video element-->
+        <video width="320" height="240" controls>
+            <source src="vid.mp4" type="audio/mp3">
+            <source src="vid.ogg" type="audio/ogg">
+            Browser doesn't support the video tag.
+        </video>
+
+
+        <video src="vid.mp4" width="320" height="240" controls>
+            Browser doesn't support the video tag.
+        </video>
+
+        <!--Type of Lists-->
+        <!--Unordered List <ul> ->List without numbring -->
+        
+          <ul>
+            <li>Javascript</li>
+            <li>Php</li>
+            <li>Python</li>
+          </ul>
+
+          <ul>
+            <li>honda</li>
+            <li>yamaha</li>
+            <ul>
+                <li>motor</li>
+                <li>car</li>
+            </ul>
+          </ul>
+
+        <!--Ordered List <ol> -->
+        <!--List with numbering-->
+
+         <ol>
+            <li>English</li>
+            <li>Math</li>
+         </ol>
+
+
+
+        <!--<ol> <li> <ul> mixeds-->
+        <ol>
+                <li>My Future wife</li>
+                <ul>
+               
+                    <li>Jessica</li>
+                    
+                </ul>
+                <li>My Dogs</li>
+            <ul>
+               
+                <li>Choco</li>
+                <li>Shadow</li>
+            </ul>
+        </ol>
+
+         <!--Table Element-->
+         <table>
+            <tr>
+                <th>Male</th>
+                <th>Female</th>
+            </tr>
+            <tr>
+                <td> Oliver </td>
+                <td> Jessica</td>
+            </tr>
+            <tr>
+                <td>habit motor </td>
+                <td>habit nitflex</td>
+            </tr>
+         </table>
+
+         <!--Element Attribute <th> <td> colspan="2" rowspan="2"-->
+            <table>
+                <tr>
+                    <th colspan="2">Subject</th>
+                </tr>
+                <tr>
+                    <td>Math</td>
+                    <td>Filipino</td>
+                </tr>
+                <tr>
+                    <td>English</td>
+                </tr>
+            </table>
+            
+            <!--Form element-->
+            <!--Attribute Form-> action method target-->
+             <!--Attribute Form-> type name value required disabled readonly-->
+             <!--<input/> -> text email password number search-->
+            <input type="text" placeholder="enter your Name"/> <br>
+            <input type="password" placeholder="enter Your password"/> <br>
+            <input type="radio"/> <br>
+            <input type="checkbox"/> <br>
+            <input type="range"/> <br>
+            <input type="number"/> <br>
+            <input type="date"/> <br>
+            <input type="file"/> <br>
+            <input type="file"/ accept="image/*" multiple> <br>
+            <input type="submit"/> <br>
+            <input type="email"/> <br>
+            <input type="tel" placeholder="telephone"/> <br>
+            <input type="search" placeholder="Search"/> <br>
+
+            <form method="" target="_blank">
+                <h2>Validation</h2>
+                <input type="email" placeholder="Enter Your Email" pattern=""/> <br>
+                <input type="text" placeholder="EnterUsername" required/> <br>
+                <input type="password" placeholder="Enter Password" required/><br>
+                <input type="submit"/><br>
+
+            </form>
+            <br>
+            <br>
+            <!--Element Date-->
+            <!--date yyyy-mm-dd(2024-6-6)-->
+            <!--datetime-local ->(yyyy-mm(2024-6-31T13:30))-->
+            <input type="date"/> <br>
+            <input type="datetime-local"/> <br>
+            <input type="datetime"/> <br>
+            <input type="week"/> <br>
+            <input type="time"/> <br>
+            <input type="month"/> <br>
+
+            <!--Text Area Element-->
+            <form method="" target="_blank">
+
+            <textarea rows="4" >Comment
+            </textarea>
+            </form>
+
+            <!--select Element-->
+            <select name="name">
+              <option value="oliver">oliver</option>
+              <option value="jessica">jessica</option>
+              <option value="shadow">shadow</option>
+              <option value="choco">choco</option>
+            </select> <br>
+
+            <!--optgroup-->
+            <select name="Namepeople">
+                <optgroup label="family">
+                <option value="oliver">oliver</option>
+                <option value="jessica">jessica</option>
+                <option value="shadow">shadow</option>
+                <option value="choco">choco</option>
+                </optgroup>
+              </select> <br>
+
+              <!--Label element-->
+              <label for="name">Full Name</label>
+              <input name="name" type="text" placeholder="enter your Name"/> <br>
+              <label for="password">Password</label>
+            <input name="password" type="password" placeholder="enter Your password"/> <br>
+            <input type="submit" name="submit"/><br>
+
+            <!--HTML ENTITIES -> -->
+            <table>
+                <tr>
+                    <th>description</th>
+                    <th>Entity Name</th>
+                    <th>Entity number</th>
+                    <th>Entity Hex</th>
+                </tr>
+                <tr>
+                    <td>Yen</td>
+                    <td>&yen;</td>
+                    <td>&#165;</td>
+                    <td>&#xa5;</td>
+                </tr>
+                <tr>
+                    <td>Yen</td>
+                    <td>&yen;</td>
+                    <td>&#165;</td>
+                    <td>&#xa5;</td>
+                </tr>
+            </table>
+     
+              <!--HTML Emojis-->
+              <!--<meta charset="UTF-8"/>-->
+              <table>
+                <tr>
+                    <th>description</th>
+                    <th>Entity number</th>
+                    <th>Entity Hex</th>
+                </tr>
+                <tr>
+                    <td>Tear of Joy</td>
+                    <td>&#x1f602;</td>
+                    <td>&#128514;</td>
+                </tr>
+            </table>
+
+            <!-- Non-Sementic Element -->
+            <span>span</span>
+            <i>italicizes</i>
+            <b>bold</b>
+            <div> div-> use as a container of element</div>
+
+            <!--Class & ID Attribute-->
+            <div class="main-container" id="main-container">
+                <h2>Hello World</h2>
+            </div>
+</body>
+</html>
